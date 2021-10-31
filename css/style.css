@@ -1,0 +1,135 @@
+@import "reset.css";
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+
+*:focus {
+  outline: none;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  text-shadow: 2px 2px 10px;
+}
+
+img {
+  width: 1422px;
+  height: 640px;
+  position: relative;
+  z-index: 1;
+}
+
+#login-form {
+  position: absolute;
+  z-index: 5;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#login-form input::placeholder {
+  color: black;
+  font-size: 15px;
+}
+
+#login-form input {
+  width: 150px;
+  height: 20px;
+  background: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 3px solid;
+}
+#login-form button {
+  border: none;
+  background: none;
+  color: black;
+  border-radius: 5px;
+}
+#greeting {
+  position: absolute;
+  z-index: 5;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  font-weight: 600;
+}
+
+#clock {
+  position: absolute;
+  z-index: 5;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 100px;
+  font-weight: 600;
+}
+
+#todo-form {
+  position: absolute;
+  z-index: 5;
+  top: 57%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#todo-form input {
+  width: 300px;
+  height: 40px;
+  background: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 3px solid;
+}
+
+#todo-form input::placeholder {
+  color: black;
+  font-size: 20px;
+}
+
+#todo-list {
+  position: absolute;
+  z-index: 5;
+  top: 62%;
+  left: 40%;
+  font-size: 20px;
+  display: block;
+}
+#todo-list li {
+  display: flex;
+  margin-bottom: 5px;
+}
+#todo-list button {
+  border: none;
+  border-radius: 5px;
+  margin-left: 1px;
+  background: none;
+}
+
+#quote {
+  position: absolute;
+  z-index: 5;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#quote span {
+  margin-bottom: 10px;
+}
+#weather {
+  position: absolute;
+  z-index: 5;
+  top: 5%;
+  left: 5%;
+}
+
+.hidden {
+  display: none;
+}
